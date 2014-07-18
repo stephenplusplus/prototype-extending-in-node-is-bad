@@ -1,0 +1,8 @@
+{
+  "name": "test-app",
+  "version": "0.0.0",
+  "dependencies": {
+    "dep": "1.0.0",
+    "_s": "2.0.0"
+  }
+}
