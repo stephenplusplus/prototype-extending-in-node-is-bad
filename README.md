@@ -1,5 +1,4 @@
-### Node dependency clashing (Native prototype extending)
-> Think twice, please!
+## Node Dependency Clashing
 
 #### This Example
 This is a simple example of how extending a native prototype (`String.prototype.yourMethod`, `Array.prototype.yourMethod`, etc) can not only interfere with other modules that made the same methods, but even with yourself, when an app relies on multiple versions of your module (by way of its dependencies).
@@ -15,7 +14,7 @@ test-app@0.0.0
   └── proto-extender@1.0.0
 ```
 
-So, in words, our app needs `proto-extender` version 2, but we have a dependency (`_dep`) that needs `proto-extender` version 1.
+So, in words, our app needs `proto-extender` version 2, but we have a dependency, `dep`, that needs `proto-extender` version 1.
 
 `proto-extender` is a module that extends a native prototype:
 
