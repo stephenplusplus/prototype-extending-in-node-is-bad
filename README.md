@@ -7,24 +7,24 @@ The dependency tree for this app looks like:
 
 ```
 test-app@0.0.0
-├── _s@2.0.0
+├── proto-extender@2.0.0
 └─┬ dep@1.0.0
-  └── _s@1.0.0
+  └── proto-extender@1.0.0
 ```
 
-So, in words, our app needs `_s` version 2, but we have a dependency (`_dep`) that needs `_s` version 1.
+So, in words, our app needs `proto-extender` version 2, but we have a dependency (`_dep`) that needs `proto-extender` version 1.
 
-`_s` is a module that extends a native prototype:
+`proto-extender` is a module that extends a native prototype:
 
 ```js
-Array.prototype._s = function () { /* ... */ };
+Array.prototype.proto-extender = function () { /* ... */ };
 ```
 
-Between `_s` version 1 and 2, the API has changed. So, what happens when your app `require`s both versions? Nothing good!
+Between `proto-extender` version 1 and 2, the API has changed. So, what happens when your app `require`s both versions? Nothing good!
 
 To cause an error (and then fix it), [these lines from `index.js`](https://github.com/stephenplusplus/prototype-extending-in-node-is-bad/blob/master/index.js#L1-2) can be re-ordered:
 ```js
-require('_s');
+require('proto-extender');
 require('dep');
 ```
 
