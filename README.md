@@ -1,7 +1,7 @@
 ### Node dependency clashing (Native prototype extending)
 > Think twice, please!
 
-#### This example
+#### This Example
 This is a simple example of how extending a native prototype (`String.prototype.yourMethod`, `Array.prototype.yourMethod`, etc) can not only interfere with other modules that made the same methods, but even with yourself, when an app relies on multiple versions of your module (by way of its dependencies).
 
 #### Structure
