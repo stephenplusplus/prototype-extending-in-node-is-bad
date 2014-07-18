@@ -30,10 +30,9 @@ require('dep');
 
 #### Reading Material
 
-Here are some articles on the subject:
-
-- [What's wrong with extending the DOM](http://perfectionkills.com/whats-wrong-with-extending-the-dom)
-- [Extending builtin natives. Evil or not?](http://perfectionkills.com/extending-native-builtins/)
+- *[Tweet]* [Asking for a friend: Is there a definitive article explaining why modifying prototypes of builtins is a Bad Idea?](https://twitter.com/passy/status/490144973560766464)
+- *[Article]* [What's wrong with extending the DOM](http://perfectionkills.com/whats-wrong-with-extending-the-dom)
+- *[Article]* [Extending builtin natives. Evil or not?](http://perfectionkills.com/extending-native-builtins/)
 
 --
 *Note: this was just a quick way for me to explain how prototypes can clash in a Node app. If you can extend this example, add an entirely new one, or link me to a great article or example elsewhere, I'll be happy to point this repo to that resource. Thanks!*
