@@ -17,7 +17,7 @@ So, in words, our app needs `proto-extender` version 2, but we have a dependency
 `proto-extender` is a module that extends a native prototype:
 
 ```js
-Array.prototype.proto-extender = function () { /* ... */ };
+Array.prototype['proto-extender'] = function () { /* ... */ };
 ```
 
 Between `proto-extender` version 1 and 2, the API has changed. So, what happens when your app `require`s both versions? Nothing good!
